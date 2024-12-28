@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int k = 5; 
+    int i, j, s;
 
-    for (int i = 0; i < k; i++) {
-        for (int j = 0; j < i; j++) {
+    for (i = 5; i >= 1; i--) {
+        for (s = 5; s > i; s--) {  
             printf("  ");
         }
-        for (int j = 0; j < k - i; j++) {
+        for (j = 1; j <= i; j++) {
             if (j % 2 == 0) {
-                printf("1 ");
-            } else {
                 printf("0 ");
+            } else {
+                printf("1 ");
             }
         }
         printf("\n");
